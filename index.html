@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE</title>
+</head>
+<body>
+    <section>
+        <h1>Arithmetic</h1>
+        <input id="id1"/> 
+        <label>+</label>
+        <input id="id2"/>
+        <button onclick="add()">=</button>
+        <label id="sum"></label>  
+    </section>
+    <script>
+        function add() {
+            let input_id1 = document.getElementById("id1");
+            let input_id2 = document.getElementById("id2");
+            let sum = Number(input_id1.value) + Number(input_id2.value);
+            document.getElementById("sum").innerText = sum;
+        }
+    </script>
+</body>
+</html>
