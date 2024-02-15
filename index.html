@@ -7,19 +7,66 @@
 </head>
 <body>
     <section>
-        <h1>Arithmetic</h1>
+        <h1>Addition</h1>
         <input id="id1"/> 
         <label>+</label>
         <input id="id2"/>
         <button onclick="add()">=</button>
         <label id="sum"></label>  
     </section>
+
+    <section>
+        <h1>Subtraction</h1>
+        <input id="sub1" />
+        <label>-</label>
+        <input id="sub2" />
+        <button onclick="sub()">=</button>
+        <label id="sub"></label>
+    </section>
+
+    <section>
+        <h1>Multiplication</h1>
+        <input id="mul1" />
+        <label>*</label>
+        <input id="mul2" />
+        <button onclick="mul()">=</button>
+        <label id="mul"></label>
+    </section>
+
+    <section>
+        <h1>Division</h1>
+        <input id="div1" />
+        <label>/</label>
+        <input id="div2" />
+        <button onclick="div()">=</button>
+        <label id="div"></label>
+    </section>
+    
     <script>
         function add() {
             let input_id1 = document.getElementById("id1");
             let input_id2 = document.getElementById("id2");
             let sum = Number(input_id1.value) + Number(input_id2.value);
             document.getElementById("sum").innerText = sum;
+        }
+
+        function sub() {
+            let input_id1 = document.getElementById("sub1");
+            let input_id2 = document.getElementById("sub2");
+            let sum = Number(input_id1.value) - Number(input_id2.value);
+            document.getElementById("sub").innerText = sum;
+        }
+        function mul() {
+            let input_id1 = document.getElementById("mul1");
+            let input_id2 = document.getElementById("mul2");
+            let sum = Number(input_id1.value) * Number(input_id2.value);
+            document.getElementById("mul").innerText = sum;
+        }
+        function div() {
+            let input_id1 = document.getElementById("div1");
+            let input_id2 = document.getElementById("div2");
+            let sum = Number(input_id1.value) / Number(input_id2.value);
+            document.getElementById("div").innerText = sum;
         }
     </script>
 </body>
